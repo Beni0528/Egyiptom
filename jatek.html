@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JÁTÉK</title>
+    <link rel="shortcut icon" href="3903392.png" type="image/x-icon" />
+    <link rel="stylesheet" href="jatek.css" />
+</head>
+
+<body>
+    <div class="header">EGYIPTOMI JÁTÉK</div>
+    <div class="main">
+        <div id="kijelzo"></div>
+
+        <p>Szia <b id="neved"></b>!</p>
+        <p id="pontok"></p>
+
+        <p>Most egy teszt feladatot fogsz kitölteni!</p>
+
+        <hr />
+
+        <button class="kezdogomb" id="startButton">KEZDÉS</button>
+
+        <hr>
+        <div class="quiz-container">
+            <h1>Quiz Játék</h1>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. Ki volt a halottak városának őrzője?</p>
+                    <input type="radio" id="q1a1" name="Kérdés1" value="Anubis" />
+                    <label for="q1a1">Anubis</label><br />
+                    <input type="radio" id="q1a2" name="Kérdés1" value="Hitler" />
+                    <label for="q1a2">Hitler</label><br />
+                    <input type="radio" id="q1a3" name="Kérdés1" value="Zeusz" />
+                    <label for="q1a3">Zeusz</label><br />
+                </div>
+                <div class="question">
+                    <p>2. Ki volt egyiptom legfőbb istene?</p>
+                    <input type="radio" id="q2a1" name="Kérdés2" value="Cézár" />
+                    <label for="q2a1">Cézár</label><br />
+                    <input type="radio" id="q2a2" name="Kérdés2" value="Ré" />
+                    <label for="q2a2">Ré</label><br />
+                    <input type="radio" id="q2a3" name="Kérdés2" value="Lenin" />
+                    <label for="q2a3">Lenin</label><br />
+                </div>
+                <div class="question">
+                    <p>3. Ki volt a túlvilág és a mennyország istene?</p>
+                    <input type="radio" id="q3a1" name="Kérdés3" value="Apolló" />
+                    <label for="q3a1">Apolló</label><br />
+                    <input type="radio" id="q3a2" name="Kérdés3" value="Ozirisz" />
+                    <label for="q3a2">Ozirisz</label><br />
+                    <input type="radio" id="q3a3" name="Kérdés3" value="Thor" />
+                    <label for="q3a3">Thor</label><br />
+                </div>
+                <div class="question">
+                    <p>4. Ki volt az égbolt és a harc istene?</p>
+                    <input type="radio" id="q4a1" name="Kérdés4" value="Hórusz" />
+                    <label for="q4a1">Hórusz</label><br />
+                    <input type="radio" id="q4a2" name="Kérdés4" value="Jézus" />
+                    <label for="q4a2">Jézus</label><br />
+                    <input type="radio" id="q4a3" name="Kérdés4" value="Mózes" />
+                    <label for="q4a3">Mózes</label><br />
+                </div>
+                <button type="button" id="stopButton" onclick="submitQuiz()">Ellenőrzés</button>
+                <p id="elapsedTime"></p>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="index.html">
+            <p class="visszalep" style="font-size: 2em">KEZDŐLAP</p>
+        </a>
+    </div>
+</body>
+<script src="js.js"></script>
+
+</html>
